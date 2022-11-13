@@ -38,4 +38,8 @@ function getMem(){
   return $memory_usage;
 }
 
+function getStorage(){
+  return ( (disk_free_space('.') / disk_total_space('.')) * 100 );
+}
+
 ?>
