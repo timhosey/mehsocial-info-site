@@ -28,7 +28,7 @@
     </div><br>
 
     <p>
-      last backup:
+      last backup: <?= date('m/d/Y @ h:i:sa', getLatestBackup()); ?>
     </p>
     
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
