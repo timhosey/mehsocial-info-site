@@ -11,9 +11,10 @@
       host uptime: <?= $uptime['days'].'d '.$uptime['hours'].'h '.$uptime['mins'].'m'; ?>
     </p>
     <h3 class="w3-padding-16 w3-text-light-grey">current stats</h3>
-    <p class="w3-wide">cpu - <?= getCPU(); ?></p>
+    <?php $cpuUsage = getCPU(); ?>
+    <p class="w3-wide">cpu - <?= $cpuUsage ?>%</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:<?= $cpuUsage ?>%"></div>
     </div>
     <p class="w3-wide">memory</p>
     <div class="w3-white">
