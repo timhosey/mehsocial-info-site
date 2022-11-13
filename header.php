@@ -48,7 +48,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">home</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">about</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">moderation</a>
+    <a href="#moderation" class="w3-bar-item w3-button" style="width:25% !important">moderation</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">contact/support</a>
   </div>
 </div>
@@ -57,11 +57,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Doe.</h1>
-    <p>Photographer and Web Designer.</p>
-    <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">you've found</span> meh social</h1>
+    <p>social media shouldn't be stressful.</p>
+    <!-- <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">-->
   </header>
 
   <?php
     require_once('about.php');
+    require_once('moderation.php');
   ?>

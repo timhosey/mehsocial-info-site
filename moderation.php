@@ -1,5 +1,5 @@
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
+  <div class="w3-padding-64 w3-content" id="moderation">
     <h2 class="w3-text-light-grey">moderation</h2>
     <hr style="width:200px" class="w3-opacity">
 
