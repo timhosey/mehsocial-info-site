@@ -61,7 +61,7 @@ function getLatestBackup(){
 }
 
 function timeSinceBackup($fileTime){
-  $currentTime = now();
+  $currentTime = time();
   $difference = $currentTime - $fileTime;
   $secondsDiff = $difference;
 
