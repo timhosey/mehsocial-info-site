@@ -10,41 +10,28 @@
       <?php $uptime = getUptime(); ?>
       host uptime: <?= $uptime['days'].'d '.$uptime['hours'].'h '.$uptime['mins'].'m'; ?>
     </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Photography</p>
+    <h3 class="w3-padding-16 w3-text-light-grey">current stats</h3>
+    <p class="w3-wide">cpu</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:95%"></div>
     </div>
-    <p class="w3-wide">Web Design</p>
+    <p class="w3-wide">memory</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:85%"></div>
     </div>
-    <p class="w3-wide">Photoshop</p>
+    <p class="w3-wide">storage</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:80%"></div>
     </div><br>
     
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
+      <p>
+        this server is administered by tim hosey, aka <a href="https://meh.social/@timcade">@timcade@meh.social</a>.
+      </p>
     </div>
 
     <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
+    <a href="https://meh.social/@timcade"><i class="fa fa-download"></i> connect with tim</a>
     </button>
     
     <!-- Grid for pricing tables -->
