@@ -21,9 +21,10 @@
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:<?= $memUsage ?>%"></div>
     </div>
-    <p class="w3-wide">storage</p>
+    <?php $diskUsage = getStorage(); ?>
+    <p class="w3-wide">storage - <?= $diskUsage ?>%</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:<?= $diskUsage ?>%"></div>
     </div><br>
     
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
