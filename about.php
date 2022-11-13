@@ -16,9 +16,10 @@
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:<?= $cpuUsage ?>%"></div>
     </div>
-    <p class="w3-wide">memory</p>
+    <?php $memUsage = getMem(); ?>
+    <p class="w3-wide">memory - <?= $memUsage ?>%</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:<?= $memUsage ?>%"></div>
     </div>
     <p class="w3-wide">storage</p>
     <div class="w3-white">
