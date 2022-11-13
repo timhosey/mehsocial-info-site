@@ -11,12 +11,19 @@
         host mem: 15871 mib<br />
         host os: arch linux<br />
         <?php $uptime = getUptime(); ?>
-        host uptime: <?= $uptime['days'].'d '.$uptime['hours'].'h '.$uptime['min'].'m'; ?>
+        host uptime: <?= $uptime['days'].'d '.$uptime['hours'].'h '.$uptime['mins'].'m'; ?>
       </h5>
 
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="w3-text-grey">
+        this server is administered by tim hosey, aka @timcade@meh.social.<br />
+        tim does not stand for any form of white supremacy, nazi iconography or support of any sort,
+        nor racism, homophobia, transphobia, or any other harmful/shitty views. it will not be tolerated
+        on meh social. if you wish to espouse your horrible views, do it somewhere else. you do not have
+        any clout or weight enough to offset being a terrible person.<br />
+        please report any violations of the rules (even if you're not sure). tim is happy to review and
+        keep meh social free of nonsense.<br />
+        please also protect yourself! block and mute freely as you see fit.
+      </p>
     </div>
 
     <div class="w3-third w3-center">
