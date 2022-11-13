@@ -49,7 +49,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">home</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">about</a>
     <a href="#moderation" class="w3-bar-item w3-button" style="width:25% !important">moderation</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">contact/support</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">support meh</a>
   </div>
 </div>
 
