@@ -28,7 +28,11 @@
     </div><br>
 
     <p>
-      last backup: <?= date('m/d/Y @ h:i:sa', getLatestBackup()); ?>
+      <?php
+        $lastBackup = getLatestBackup();
+        
+      ?>
+      last backup: <?= date('m/d/Y @ h:i:sa', $lastBackup); ?> -- 
     </p>
     
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
