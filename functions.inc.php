@@ -71,7 +71,7 @@ function timeSinceBackup($fileTime){
 
   $hrs = $hrs / 60;
 
-  return round($hrs).'h '.$mins.'m '.$secs.'s';
+  return floor($hrs).'h '.$mins.'m '.$secs.'s';
 }
 
 ?>
