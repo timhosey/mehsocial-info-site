@@ -1,3 +1,4 @@
+<?php require_once('functions.inc.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
