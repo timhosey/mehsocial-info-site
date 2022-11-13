@@ -17,12 +17,12 @@
       <div class="w3-dark-grey" style="height:28px;width:<?= $cpuUsage ?>%"></div>
     </div>
     <?php $memUsage = getMem(); ?>
-    <p class="w3-wide">memory - <?= $memUsage ?>%</p>
+    <p class="w3-wide">mem - <?= $memUsage ?>%</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:<?= $memUsage ?>%"></div>
     </div>
     <?php $diskUsage = getStorage(); ?>
-    <p class="w3-wide">storage - <?= $diskUsage ?>%</p>
+    <p class="w3-wide">sto - <?= $diskUsage ?>%</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:<?= $diskUsage ?>%"></div>
     </div><br>
