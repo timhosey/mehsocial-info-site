@@ -43,7 +43,10 @@
       <h1>coming soon</h1>
       <h5 class="w3-padding-32">more coming soon...</h5>
 
-      <p class="w3-text-grey">like the most recent backup time.</p>
+      <p class="w3-text-grey">
+        like the most recent backup time. also storage remaining? cpu usage as well? maybe live mem usage?
+        also how to support the site
+      </p>
     </div>
   </div>
 </div>
