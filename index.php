@@ -11,7 +11,7 @@
         host mem: 15871 mib<br />
         host os: arch linux<br />
         <?php $uptime = getUptime(); ?>
-        host uptime: <?= echo $uptime['days'].'d '.$uptime['hours'].'h '.$uptime['min'].'m'; ?>
+        host uptime: <?= $uptime['days'].'d '.$uptime['hours'].'h '.$uptime['min'].'m'; ?>
       </h5>
 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
