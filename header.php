@@ -65,4 +65,5 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <?php
     require_once('about.php');
     require_once('moderation.php');
+    require_once('contact.php');
   ?>
