@@ -15,7 +15,7 @@
       </h5>
 
       <p class="w3-text-grey">
-        this server is administered by tim hosey, aka @timcade@meh.social.<br />
+        this server is administered by tim hosey, aka <a href="https://meh.social/@timcade">@timcade@meh.social</a>.<br />
         tim does not stand for any form of white supremacy, nazi iconography or support of any sort,
         nor racism, homophobia, transphobia, or any other harmful/shitty views. it will not be tolerated
         on meh social. if you wish to espouse your horrible views, do it somewhere else. you do not have
@@ -40,18 +40,16 @@
     </div>
 
     <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      <h1>coming soon</h1>
+      <h5 class="w3-padding-32">more coming soon...</h5>
 
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="w3-text-grey">like the most recent backup time.</p>
     </div>
   </div>
 </div>
 
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+    <h1 class="w3-margin w3-xlarge">Quote of the day: be safe</h1>
 </div>
 
 <?php require_once('footer.php'); ?>
