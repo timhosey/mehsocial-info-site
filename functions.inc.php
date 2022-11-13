@@ -39,7 +39,7 @@ function getMem(){
 }
 
 function getStorage(){
-  return round( (disk_free_space('.') / disk_total_space('.')) * 100, 1);
+  return round( (disk_total_space('.') / disk_free_space('.')) * 100, 1);
 }
 
 function getLatestBackup(){

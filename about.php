@@ -22,7 +22,7 @@
       <div class="w3-dark-grey" style="height:28px;width:<?= $memUsage ?>%"></div>
     </div>
     <?php $diskUsage = getStorage(); ?>
-    <p class="w3-wide">sto - <?= $diskUsage ?>% free</p>
+    <p class="w3-wide">sto - <?= $diskUsage ?>%</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:<?= $diskUsage ?>%"></div>
     </div><br>
