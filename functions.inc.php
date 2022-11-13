@@ -19,4 +19,11 @@ function getUptime(){
   );
 }
 
+function getCPU(){
+  $loads = sys_getloadavg();
+  $core_nums = trim(shell_exec("grep -P '^processor' /proc/cpuinfo|wc -l"));
+  $load = round($loads[0]/($core_nums + 1)*100, 2);
+  return $load;
+}
+
 ?>
