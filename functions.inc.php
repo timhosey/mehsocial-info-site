@@ -35,11 +35,11 @@ function getMem(){
   $mem = array_merge($mem);
   $memory_usage = $mem[2]/$mem[1]*100;
 
-  return $memory_usage;
+  return round($memory_usage, 1);
 }
 
 function getStorage(){
-  return ( (disk_free_space('.') / disk_total_space('.')) * 100 );
+  return round( (disk_free_space('.') / disk_total_space('.')) * 100, 1);
 }
 
 ?>
