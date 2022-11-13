@@ -61,10 +61,17 @@ function getLatestBackup(){
 }
 
 function timeSinceBackup($fileTime){
-  $time1 = new DateTime($fileTime);
-  $time2 = new DateTime(time());
-  $time_diff = $time1->diff($time2);
-  return $time_diff->h.'h '.$time_diff->i.'m '.$time_diff->s.'s';
+  $currentTime = now();
+  $difference = $currentTime - $fileTime;
+  $secondsDiff = $difference;
+
+  $secs = $secondsDiff % 60;
+  $hrs = $secondsDiff / 60;
+  $mins = $hrs % 60;
+
+  $hrs = $hrs / 60;
+
+  return $hrs.'h '.$mins.'m '.$secs.'s';
 }
 
 ?>
