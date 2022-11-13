@@ -60,4 +60,11 @@ function getLatestBackup(){
   return $latest_ctime;
 }
 
+function timeSinceBackup($fileTime){
+  $time1 = new DateTime($fileTime);
+  $time2 = new DateTime(time());
+  $time_diff = $time1->diff($time2);
+  return $time_diff->h.'h '.$time_diff->i.'m '.$time_diff->s.'s';
+}
+
 ?>
