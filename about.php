@@ -26,6 +26,10 @@
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:<?= $diskUsage ?>%"></div>
     </div><br>
+
+    <p>
+      last backup:
+    </p>
     
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
       <p>
