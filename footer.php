@@ -1,6 +1,6 @@
     <!-- Footer -->
     <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <img src='img/mastodon_logo.svg' />
+    <img src='img/mastodon_logo.svg' style='width: 100%;' />
   <!-- End footer -->
   </footer>
 
