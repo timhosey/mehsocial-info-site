@@ -3,7 +3,24 @@
     <hr style="width:200px" class="w3-opacity">
     <?php
       $stats = getStats();
+      $cpuUsage = getCPU();
+      $memUsage = getMem();
+      $diskUsage = getStorage();
     ?>
+
+    <p class="w3-wide">cpu - <?= $cpuUsage ?>%</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:<?= $cpuUsage ?>%"></div>
+    </div>
+    <p class="w3-wide">mem - <?= $memUsage ?>%</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:<?= $memUsage ?>%"></div>
+    </div>
+    <p class="w3-wide">sto - <?= $diskUsage ?>%</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:<?= $diskUsage ?>%"></div>
+    </div>
+
     <p>
       mastodon version: <strong><?= $stats['version']; ?></strong><br />
       current users: <strong><?= $stats['stats']['user_count']; ?></strong><br />
