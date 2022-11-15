@@ -4,7 +4,7 @@
     <hr style="width:200px" class="w3-opacity">
     <p>you can reach out in a variety of ways:</p>
 
-    <p>mastodon: <a href="https://meh.social/@timcade">timcade</a></p>
+    <p>mastodon: <a rel="me" href="https://meh.social/@timcade">timcade</a></p>
     <p>instagram: <a href="https://instagram.com/TheTimcade">thetimcade</a></p>
   <!-- End Contact Section -->
   </div>
