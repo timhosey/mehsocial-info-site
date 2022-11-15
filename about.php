@@ -9,11 +9,6 @@
       host os: <strong>arch linux</strong><br />
       <?php $uptime = getUptime(); ?>
       host uptime: <strong><?= $uptime['days'].'d '.$uptime['hours'].'h '.$uptime['mins'].'m'; ?></strong><br />
-      <?php
-        $lastBackup = getLatestBackup();
-        $lastBackupText = timeSinceBackup($lastBackup);
-      ?>
-      last backup: <?= date('m/d/Y @ h:i:sa', $lastBackup); ?> pst -- (<?= $lastBackupText; ?> ago)
     </p>
     
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
