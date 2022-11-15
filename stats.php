@@ -8,15 +8,15 @@
       $diskUsage = getStorage();
     ?>
 
-    <p class="w3-wide">cpu - <?= $cpuUsage ?>%</p>
+    <p class="w3-wide">cpu - <strong><?= $cpuUsage ?>%</strong></p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:<?= $cpuUsage ?>%"></div>
     </div>
-    <p class="w3-wide">mem - <?= $memUsage ?>%</p>
+    <p class="w3-wide">mem - <strong><?= $memUsage ?>%</strong></p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:<?= $memUsage ?>%"></div>
     </div>
-    <p class="w3-wide">sto - <?= $diskUsage ?>%</p>
+    <p class="w3-wide">sto - <strong><?= $diskUsage ?>%</strong></p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:<?= $diskUsage ?>%"></div>
     </div>
