@@ -74,4 +74,10 @@ function timeSinceBackup($fileTime){
   return floor($hrs).'h '.$mins.'m '.$secs.'s';
 }
 
+function getStats() {
+  $json = file_get_contents('https://meh.social/api/v1/instance');
+  $stats = json_decode($json, true);
+  return $stats;
+}
+
 ?>
