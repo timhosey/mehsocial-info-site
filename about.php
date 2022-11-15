@@ -25,7 +25,20 @@
     <p class="w3-wide">sto - <?= $diskUsage ?>%</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:<?= $diskUsage ?>%"></div>
-    </div><br>
+    </div><br />
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="stats">
+    <h2 class="w3-text-light-grey">stats</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <?php
+      $stats = getStats();
+    ?>
+    <p>
+      current users: <?= $stats['stats']['user_count']; ?><br />
+      posts made: <?= $stats['stats']['status_count']; ?><br />
+      federated posts: <?= $stats['stats']['domain_count']; ?>
+    </p>
+  </div>
 
     <p>
       <?php
