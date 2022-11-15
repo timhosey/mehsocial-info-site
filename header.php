@@ -33,6 +33,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-user w3-xxlarge"></i>
     <p>about</p>
   </a>
+  <a href="#stats" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>stats</p>
+  </a>
   <a href="#moderation" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
     <p>moderation</p>
@@ -48,6 +52,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">home</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">about</a>
+    <a href="#stats" class="w3-bar-item w3-button" style="width: 25% !important">stats</a>
     <a href="#moderation" class="w3-bar-item w3-button" style="width:25% !important">moderation</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">support meh</a>
   </div>
