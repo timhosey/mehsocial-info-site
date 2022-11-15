@@ -8,26 +8,7 @@
       host mem: <strong>15871 mib</strong><br />
       host os: <strong>arch linux</strong><br />
       <?php $uptime = getUptime(); ?>
-      host uptime: <strong><?= $uptime['days'].'d '.$uptime['hours'].'h '.$uptime['mins'].'m'; ?></strong>
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">current stats</h3>
-    <?php $cpuUsage = getCPU(); ?>
-    <p class="w3-wide">cpu - <?= $cpuUsage ?>%</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:<?= $cpuUsage ?>%"></div>
-    </div>
-    <?php $memUsage = getMem(); ?>
-    <p class="w3-wide">mem - <?= $memUsage ?>%</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:<?= $memUsage ?>%"></div>
-    </div>
-    <?php $diskUsage = getStorage(); ?>
-    <p class="w3-wide">sto - <?= $diskUsage ?>%</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:<?= $diskUsage ?>%"></div>
-    </div><br />
-
-    <p>
+      host uptime: <strong><?= $uptime['days'].'d '.$uptime['hours'].'h '.$uptime['mins'].'m'; ?></strong><br />
       <?php
         $lastBackup = getLatestBackup();
         $lastBackupText = timeSinceBackup($lastBackup);
