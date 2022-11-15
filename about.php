@@ -3,12 +3,12 @@
     <h2 class="w3-text-light-grey">about</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>
-      host device: asus vm65n 2201 nuc<br />
-      host cpu: intel i5-7400u (4 core, 4 thread) @ 3.1 ghz<br />
-      host mem: 15871 mib<br />
-      host os: arch linux<br />
+      host device: <strong>asus vm65n 2201 nuc</strong><br />
+      host cpu: <strong>intel i5-7400u (4 core, 4 thread) @ 3.1 ghz</strong><br />
+      host mem: <strong>15871 mib</strong><br />
+      host os: <strong>arch linux</strong><br />
       <?php $uptime = getUptime(); ?>
-      host uptime: <?= $uptime['days'].'d '.$uptime['hours'].'h '.$uptime['mins'].'m'; ?>
+      host uptime: <strong><?= $uptime['days'].'d '.$uptime['hours'].'h '.$uptime['mins'].'m'; ?></strong>
     </p>
     <h3 class="w3-padding-16 w3-text-light-grey">current stats</h3>
     <?php $cpuUsage = getCPU(); ?>
@@ -34,9 +34,9 @@
       $stats = getStats();
     ?>
     <p>
-      current users: <?= $stats['stats']['user_count']; ?><br />
-      posts made: <?= $stats['stats']['status_count']; ?><br />
-      connected domains: <?= $stats['stats']['domain_count']; ?>
+      current users: <strong><?= $stats['stats']['user_count']; ?></strong><br />
+      posts made: <strong><?= $stats['stats']['status_count']; ?></strong><br />
+      connected domains: <strong><?= $stats['stats']['domain_count']; ?></strong>
     </p>
   </div>
 
