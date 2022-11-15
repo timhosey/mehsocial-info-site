@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
@@ -30,11 +30,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>home</p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-block-question w3-xxlarge"></i>
+    <i class="fa-solid fa-block-question w3-xxlarge"></i>
     <p>about</p>
   </a>
   <a href="#stats" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-signal-bars w3-xxlarge"></i>
+    <i class="fa-solid fa-signal-bars w3-xxlarge"></i>
     <p>stats</p>
   </a>
   <a href="#moderation" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
