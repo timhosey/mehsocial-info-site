@@ -70,9 +70,3 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>social media shouldn't be stressful.</p>
     <!-- <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">-->
   </header>
-
-  <?php
-    require_once('about.php');
-    require_once('moderation.php');
-    require_once('contact.php');
-  ?>
