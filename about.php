@@ -34,6 +34,7 @@
       $stats = getStats();
     ?>
     <p>
+      mastodon version: <strong><?= $stats['version']; ?></strong><br />
       current users: <strong><?= $stats['stats']['user_count']; ?></strong><br />
       posts made: <strong><?= $stats['stats']['status_count']; ?></strong><br />
       connected domains: <strong><?= $stats['stats']['domain_count']; ?></strong>
