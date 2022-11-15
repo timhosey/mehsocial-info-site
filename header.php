@@ -30,20 +30,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>home</p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa-solid fa-block-question w3-xxlarge"></i>
+    <i class="fa fa-question w3-xxlarge"></i>
     <p>about</p>
   </a>
   <a href="#stats" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa-solid fa-signal-bars w3-xxlarge"></i>
+    <i class="fa fa-chart-simple w3-xxlarge"></i>
     <p>stats</p>
   </a>
   <a href="#moderation" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
     <p>moderation</p>
   </a>
+  <a href="#support" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-mug-hot w3-xxlarge"></i>
+    <p>support meh</p>
+  </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>support meh</p>
+    <p>contact</p>
   </a>
 </nav>
 
