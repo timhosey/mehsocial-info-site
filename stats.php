@@ -6,6 +6,8 @@
       $cpuUsage = getCPU();
       $memUsage = getMem();
       $diskUsage = getStorage();
+      $lastBackup = getLatestBackup();
+      $lastBackupText = timeSinceBackup($lastBackup);
     ?>
 
     <p class="w3-wide">cpu - <strong><?= $cpuUsage ?>%</strong></p>
@@ -25,6 +27,7 @@
       mastodon version: <strong><?= $stats['version']; ?></strong><br />
       current users: <strong><?= $stats['stats']['user_count']; ?></strong><br />
       posts made: <strong><?= $stats['stats']['status_count']; ?></strong><br />
-      connected domains: <strong><?= $stats['stats']['domain_count']; ?></strong>
+      connected domains: <strong><?= $stats['stats']['domain_count']; ?></strong><br />
+      last backup: <strong><?= date('m/d/Y @ h:i:sa', $lastBackup); ?> pst (<?= $lastBackupText; ?> ago)</strong>
     </p>
   </div>
