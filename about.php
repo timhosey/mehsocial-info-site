@@ -36,7 +36,7 @@
     <p>
       current users: <?= $stats['stats']['user_count']; ?><br />
       posts made: <?= $stats['stats']['status_count']; ?><br />
-      federated posts: <?= $stats['stats']['domain_count']; ?>
+      connected domains: <?= $stats['stats']['domain_count']; ?>
     </p>
   </div>
 
