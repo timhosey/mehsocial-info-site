@@ -6,5 +6,6 @@
 
     <p>mastodon: <a rel="me" href="https://meh.social/@timcade">timcade</a></p>
     <p>instagram: <a href="https://instagram.com/TheTimcade">thetimcade</a></p>
+    <p>email: timcade [at] meh [dot] social</p>
   <!-- End Contact Section -->
   </div>
