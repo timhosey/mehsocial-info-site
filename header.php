@@ -67,6 +67,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">you've found</span> meh social</h1>
-    <p>social media shouldn't be stressful.</p>
-    <img src="https://meh.social/system/site_uploads/files/000/000/001/@1x/48e668e114427851.png" alt="meh social logo by @jankhambrams@meh.social" class="w3-image" width="50%">
+    <p><img src="https://meh.social/system/site_uploads/files/000/000/001/@1x/48e668e114427851.png" alt="meh social logo by @jankhambrams@meh.social" class="w3-image" width="50%">
+      <br />social media for friendly (and odd)  folks
+    </p>
   </header>
