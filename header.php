@@ -24,7 +24,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <a href='https://meh.social'><img src="https://meh.social/system/site_uploads/files/000/000/002/original/30021af0f9401d61.png" style="width:100%" /></a>
+  <a href='https://meh.social'><img src="https://meh.social/system/site_uploads/files/000/000/002/original/30021af0f9401d61.png" style="width:100%" alt="meh social mascot by @jankhambrams@meh.social" /></a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>home</p>
@@ -68,5 +68,5 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">you've found</span> meh social</h1>
     <p>social media shouldn't be stressful.</p>
-    <!-- <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">-->
+    <img src="https://meh.social/system/site_uploads/files/000/000/001/@1x/48e668e114427851.png" alt="meh social logo by @jankhambrams@meh.social" class="w3-image" width="50%">
   </header>
