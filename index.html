@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="vendor/fonts.css" />
+<link rel="stylesheet" href="main.css" />
+</head>
+
+
+<!-- I cannot fucking believe I rewrote this thing.
+	 I hope Tim isn't pissed.
+
+	 But I thought "hey, I could do this in shell
+	 sos I don't have to install PHP on a thing that already
+	 has like, four web environements on it."
+
+	 It's not like it processes input.
+
+	 And here we are.
+
+	 'sides, it was a challenge.
+-->
+
+<body>
+
+<!-- header -->
+<nav class="sidebar">
+	<a class="icon" href='https://meh.social'><img src="img/mehstodon.png"  alt="meh social mascot by @jankhambrams@meh.social" /></a>
+	<a href="#home" class="active">
+		<i class="fa fa-home"></i>
+		<p>home</p>
+	</a>
+	<a href="#about">
+		<i class="fa fa-question"></i>
+		<p>about</p>
+	</a>
+	<a href="#stats">
+		<i class="fa fa-chart-simple"></i>
+		<p>stats</p>
+	</a>
+	<a href="#moderation">
+		<i class="fa fa-eye"></i>
+		<p>moderation</p>
+	</a>
+	<a href="#support">
+		<i class="fa fa-mug-hot"></i>
+		<p>support meh</p>
+	</a>
+	<a href="#contact">
+		<i class="fa fa-envelope"></i>
+		<p>contact</p>
+	</a>
+</nav>
+
+<div id="meat">
+
+<header id="home">
+	<h1><span>you've found </span>meh.social</h1>
+	<img src="img/mehstodon_panorama.png" alt="meh social logo by @jankhambrams@meh.social" />
+	<h2>social media for friendly (and odd) folks</h2>
+</header>
+
+
+<!-- About the Server -->
+
+<section id="about">
+	<h3>about</h3>
+
+	<ul>
+		<li>host device: <span id="h_device">HOST DEVICE</span></li>
+		<li>host cpu: <span id="h_cpu">HOST CPU</span></li>
+		<li>host memory: <span id="h_memory">HOST MEMORY</span></li>
+		<li>host os: <span id="h_os">HOST OS</span></li>
+	</ul>
+
+	<div class="notice">
+		<p>
+			this server is administered by the folks at KTQA as part of the lpfm.io initiative.
+			specifically, the people running this mastodon instance are tim hosey and sam mulvey.
+		</p>
+	</div>
+
+	<ul class="connect">
+		<li>
+			<a href="https://meh.social/@timcade"><i class="fa-brands fa-mastodon"></i> connect with tim</a>
+		</li>
+		<li>
+			<a href="https://meh.social/@dimbulb"><i class="fa-brands fa-mastodon"></i> connect with sam</a>
+		</li>
+	</ul>
+
+</section>
+
+<!-- Statistics -->
+
+<section id="stats">
+	<h3>stats</h3>
+
+	<div class="stabar">
+		<h4>cpu - <b><span id="s_cpu"></span>%</b></h4>
+		<div class="bar"><div id="m_cpu"></div></div>
+	</div>
+
+
+	<div class="stabar">
+		<h4>mem - <b><span id="s_mem"></span>%</b></h4>
+		<div class="bar"><div id="m_mem"></div></div>
+	</div>
+
+	<div class="stabar">
+		<h4>sto - <b><span id="s_sto"></span>%</b></h4>
+		<div class="bar"><div id="m_sto"></div></div>
+	</div>
+
+	<div class="stablist">
+		<ul>
+			<li>mastodon version: <b id="m_ver"></b></li>
+			<li>current users: <b id="m_ucount"></b></li>
+			<li>posts made: <b id="m_posts"></b></li>
+			<li>connected domains: <b id="m_domains"></b></li>
+			<li>last backup: <b id="m_backup"></b></li>
+		</ul>
+	</div>
+
+</section>
+
+<!-- Moderation -->
+
+<section id="moderation">
+	<h3>moderation</h3>
+
+	<p>
+		meh social does not stand for any form of white supremacy, nazi iconography or support of any sort,
+		nor racism, homophobia, transphobia, or any other harmful/shitty views. <strong>it will not be tolerated
+		on meh.social.</strong> if you wish to espouse your horrible views, do it somewhere else. you do not have
+		any clout or weight enough to offset being a terrible person.
+	</p>
+	<p>
+		please report any violations of the rules (even if you're not sure). tim is happy to review and
+		keep meh social free of nonsense.
+	</p>
+	<p>
+		please also protect yourself! block and mute freely as you see fit.
+	</p>
+
+	<p>
+		seriously, we're rather more likely to watch the server burn than spend our cycles helping
+		out hate.
+	</p>
+
+</section>
+
+
+<!-- Support -->
+<section id="support">
+	<h3>support</h3>
+
+	<p>
+		you can support mehstodon by making a contribution to KTQA-LP.
+		you can also contribute directly to the folks who run it.
+		<a href="https://patreon.com/timcade">tim has a patreon</a> and incidentally,
+		<a href="https://www.patreon.com/SamMulvey">so does sam</a>.
+	</p>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+	<p>
+		you can reach out in a variety of ways:
+	</p>
+	<ul>
+		<li><i class="fa-brands fa-mastodon"></i> mastodon: <a href="https://meh.social/@timcade">timcade</a> and <a href="https://meh.social/@dimbulb">dimbulb</a></li>
+		<li><i class="fa-solid fa-globe"></i> main website: <a href="https://ktqa.org">ktqa.org</a></li>
+		<li><i class="fa-solid fa-envelope"></i> email: info (at) ktqa {dot} o, r, and then g</li>
+		<li><i class="fa-solid fa-phone-volume"></i> phone or text: (253) 330-8821</li>
+	</ul>
+</section>
+
+
+<!-- Footer -->
+<footer>
+	<img src="img/mastodon_logo.svg" />
+</footer>
+
+
+
+</div>
+
+
+</body>
+</html>
