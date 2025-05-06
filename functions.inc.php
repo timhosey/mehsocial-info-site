@@ -1,23 +1,12 @@
 <?php
 
 function getUptime(){ 
-  $str   = @file_get_contents('/proc/uptime');
-  $num   = floatval($str);
-  $secs  = fmod($num, 60);
-  $num = intdiv($num, 60);
-  $mins  = $num % 60;
-  $num = intdiv($num, 60);
-  $hours = $num % 24;
-  $num = intdiv($num, 24);
-  $days  = $num;
-
-  return array(
-    "days"  => $days,
-    "hours" => $hours,
-    "mins"  => $mins,
-    "secs"  => $secs
-  );
+	// needed some fixing to ditch the float error
+	// this is just for funsies to get the count down
+	$seconds = (int) @explode(" ", file_get_contents('/proc/uptime'))[0];
+	return timearray($seconds);
 }
+
 
 function getCPU(){
   $loads = sys_getloadavg();
@@ -39,11 +28,11 @@ function getMem(){
 }
 
 function getStorage(){
-  return round( ((disk_total_space('.') / disk_free_space('.')) * 100) - 100, 1);
+  return round( ((disk_total_space('/tmp') / disk_free_space('/tmp')) * 100) - 100, 1);
 }
 
 function getLatestBackup(){
-  $path = "/backup"; 
+  $path = "/tmp/backup"; 
 
   $latest_ctime = 0;
   $latest_filename = '';    
@@ -65,19 +54,34 @@ function timeSinceBackup($fileTime){
   $difference = $currentTime - $fileTime;
   $secondsDiff = $difference;
 
-  $secs = $secondsDiff % 60;
-  $hrs = $secondsDiff / 60;
-  $mins = $hrs % 60;
+  $nice = timearray($secondsDiff);
 
-  $hrs = $hrs / 60;
+  return $nice["hours"].'h'.$nice["mins"].'m'.$nice["secs"].'s';
 
-  return floor($hrs).'h '.$mins.'m '.$secs.'s';
 }
 
 function getStats() {
   $json = file_get_contents('https://meh.social/api/v1/instance');
   $stats = json_decode($json, true);
   return $stats;
+}
+
+function timearray(int $seconds): array {
+	$days = (int) ($seconds / 86400);
+	$seconds -= $days * 86400;
+
+	$hours = (int) ($seconds / 3600);
+	$seconds -= $hours * 3600;
+
+	$mins = (int) ($seconds / 60);
+	$seconds -= $mins * 60;
+
+	return array(
+		"days"  => $days,
+		"hours" => $hours,
+		"mins"  => $mins,
+		"secs"  => $seconds
+	);
 }
 
 ?>
