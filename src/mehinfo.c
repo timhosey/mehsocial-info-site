@@ -81,6 +81,8 @@ void main() {
 	// disk":{"size":1000,"used":250,"free":750,"perc":25}}
 	printf("\"disk\": { \"size\": %d, \"used\": %d, \"free\": %d, \"perc\": %.2f }, ", fs_size, fs_used, fs_free, fs_perc);
 
+	printf("\"uptime\": %lu, ", info.uptime);
+
 	printf("\"err\": 0 }\n");
 
 

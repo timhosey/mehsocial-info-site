@@ -3,9 +3,10 @@
 
 <head>
 <meta charset="UTF-8">
-<title></title>
+<title>meh.social info 2.0</title>
 <link rel="stylesheet" href="vendor/fonts.css" />
 <link rel="stylesheet" href="main.css" />
+<script type="text/javascript" src="index.js"></script>
 </head>
 
 
@@ -73,6 +74,7 @@
 		<li>host cpu: <span id="h_cpu">HOST CPU</span></li>
 		<li>host memory: <span id="h_memory">HOST MEMORY</span></li>
 		<li>host os: <span id="h_os">HOST OS</span></li>
+		<li>host uptime: <span id="h_uptime">HOST_UPTIME</span></li>
 	</ul>
 
 	<div class="notice">
@@ -99,19 +101,25 @@
 	<h3>stats</h3>
 
 	<div class="stabar">
-		<h4>cpu - <b><span id="s_cpu"></span>%</b></h4>
-		<div class="bar"><div id="m_cpu"></div></div>
+		<h4>cpu - <b><span id="s_cpu"></span></b></h4>
+		<div class="bar"><div id="b_cpu"></div></div>
 	</div>
 
 
 	<div class="stabar">
-		<h4>mem - <b><span id="s_mem"></span>%</b></h4>
-		<div class="bar"><div id="m_mem"></div></div>
+		<h4>mem - <b><span id="s_mem"></span></b></h4>
+		<div class="bar"><div id="b_mem"></div></div>
+	</div>
+
+	
+	<div class="stabar">
+		<h4>swa - <b><span id="s_swa"></span></b></h4>
+		<div class="bar"><div id="b_swa"></div></div>
 	</div>
 
 	<div class="stabar">
-		<h4>sto - <b><span id="s_sto"></span>%</b></h4>
-		<div class="bar"><div id="m_sto"></div></div>
+		<h4>sto - <b><span id="s_sto"></span></b></h4>
+		<div class="bar"><div id="b_sto"></div></div>
 	</div>
 
 	<div class="stablist">
@@ -184,6 +192,8 @@
 <footer>
 	<img src="img/mastodon_logo.svg" />
 </footer>
+
+<div id="countdown">0s</div>
 
 
 
