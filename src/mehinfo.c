@@ -19,7 +19,7 @@ void mehdie(const char *string) {
 }
 
 
-void main() {
+int main() {
 
 	struct sysinfo info;
 	struct statvfs fs;
@@ -85,7 +85,7 @@ void main() {
 
 	printf("\"err\": 0 }\n");
 
-
+	return 0;
 
 }
 
