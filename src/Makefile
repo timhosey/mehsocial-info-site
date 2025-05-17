@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=
-BIN=mehsocial
+BIN=mehinfo
 
 mehinfo:
 	$(CC) -o $(BIN) mehinfo.c
