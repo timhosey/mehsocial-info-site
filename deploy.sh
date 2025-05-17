@@ -5,9 +5,6 @@ set -e
 deploydir=$(realpath "$1")
 cwd=$(pwd)
 
-echo "FIND"
-find $deploydir
-
 helpanddie() {
 	echo "$0: ./deploy.sh <some_empty_directory>"
 	exit 1;
