@@ -1,0 +1,218 @@
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: #000000;
+	color: #888888;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
+a, a:visited {
+	text-decoration: underline;
+	color: #888888;
+}
+
+/* sidebar thingy */
+
+nav {
+	background-color: #222222;
+}
+
+nav > a:hover {
+	background-color: #000000;
+
+}
+
+nav > a.active {
+	background-color: #000000;
+}
+
+nav > a.active:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+nav > a, nav > a:visited {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+	nav {
+		width: 120px;
+		position: fixed;
+		margin-left: 0;
+		height: 100%;
+		top: 0;
+		margin: 0;
+	}
+
+	nav > a:first-child {
+		padding: 0 0 !important;
+	}
+
+	nav > a, nav > a:visited {
+		display: block;
+		text-align: center;
+		padding: 12px 24px;
+
+	}
+
+	nav > a > i {
+		font-size: 36px;
+	}
+
+	nav > a > p {
+		font-size: 12px;
+	}
+
+	nav > a > img {
+		width: 100%;
+	}
+
+	#meat {
+		margin-left: 140px;
+		margin-right: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+
+	nav > a {
+		display: inline-block;
+		width: 16%;
+		text-align: center;
+		font-size: 12px;
+	}
+
+
+	nav > a:first-child, nav > a > i {
+		display: none !Important;
+	}
+
+	nav > a > p {
+		margin: 0;
+		display: inline;
+	}
+
+}
+
+header {
+	padding: 32px;
+}
+
+header > h1 {
+	font-size: 64px;
+	color: #ffffff;
+	text-align: center;
+
+}
+
+@media only screen and (max-width: 600px) {
+	header > h1 > span {
+		display: none;
+	}
+}
+
+header > img {
+	width: 50%;
+	margin-left: 25%;
+}
+
+header > h2 {
+	text-align: center;
+	color: #ffffff;
+	margin: 0;
+	font-size: 18px;
+}
+
+
+section h3 {
+	color: #ffffff;
+	font-size: 33px;
+	border-bottom: 1px solid #a9a9a9;
+	width: 25%;
+	padding-bottom: 16px;
+}
+
+section ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+section ul.connect li {
+	background-color: #ffffff;
+	color: #000000;
+	width: 32%;
+	float: left;
+	padding: 10px 0px;
+	margin: 10px 20px 10px 0;
+	text-align: center;
+
+}
+
+section ul.connect a {
+	color: #000000;
+}
+
+section div.notice {
+	color: #000000;
+	background-color: #ffffff;
+	padding: 10px 0px;
+	margin: 10px 0px;
+}
+
+
+div.stabar {
+	margin-bottom: 10px;
+}
+div.stabar > h4 {
+	letter-spacing: 4px;
+	margin: 16px 0;
+}
+div.stabar > div.bar {
+	background-color: #ffffff;
+}
+div.stabar > div.bar > div {
+	width: 50%;
+	background-color: #888888;
+	height: 28px;
+}
+
+footer {
+	text-align: center;
+}
+
+footer img {
+	margin-top: 30px;
+	width: 40%;
+}
+
+div#countdown {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+	padding: 5px;
+	font-size: 12px;
+	width: 14px;
+}
